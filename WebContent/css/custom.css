@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:500&display=swap&subset=korean');
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap&subset=korean');
+
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+	font-family : 'hanna';
+}
+
+h4 {
+	font-family: 'Nanum Pen Script', cursive;
+}
