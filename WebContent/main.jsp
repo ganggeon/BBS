@@ -71,7 +71,7 @@
         <h4>made by 강건</h4>
         <h1>웹 페이지 소개</h1>
         <p>이 웹 페이지는 JSP을 사용해 제작하였습니다.<br>디자인 펨플렛으로는 부트스트랩을 사용하였습니다.</p>
-        <a class="btn btn-primary btn-pull" href="https://github.com/ganggeon/BBS" role="button">자세히 알아보기</a>
+        <a class="btn btn-primary btn-pull" href="https://github.com/ganggeon/BBS" role="button">GitHub에서 자세히 알아보기</a>
       </div>
     </div>
   </div>
