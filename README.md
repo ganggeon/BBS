@@ -8,7 +8,7 @@
 - Back : Java, Jsp   
  
 # ERD
-! [erd](/readmeImages/400x400.jpg)
+![erd](/readmeImages/erd.jpg)
 
 # 구현기능
 
