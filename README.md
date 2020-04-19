@@ -16,7 +16,10 @@ Back : Java, Jsp
 
 # 구현기능
 ![main](/readmeImages/bbs메인.jpg)
+#### 메인 
 ![bbs](/readmeImages/bbs게시판.jpg)
+#### 글 목록
 ![join](/readmeImages/bbs회원가입.jpg)
+#### 회원가입 
 ![login](/readmeImages/bbs로그인.jpg)
-# 문제점
+#### 로그인 
