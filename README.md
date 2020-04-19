@@ -7,7 +7,7 @@ Front : HTML, CSS, JavaScript
 Back : Java, Jsp   
 기여도 : 100%   
 
-# 
+# MVCmodel
 
 # 구현기능
 
