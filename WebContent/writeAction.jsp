@@ -17,7 +17,7 @@
      String userID = null;
      if(session.getAttribute("userID") != null){
     	 userID = (String) session.getAttribute("userID");
-     } // 섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 섹션값을 부여 
+     } // 섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 세션값을 부여 
      if(userID == null){ 
     	 PrintWriter script = response.getWriter();
     	 script.println("<script>");

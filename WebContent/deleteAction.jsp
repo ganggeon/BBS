@@ -15,14 +15,14 @@
      String userID = null;
      if(session.getAttribute("userID") != null){
     	 userID = (String) session.getAttribute("userID");
-     } // 섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 섹션값을 부여 
+     } //섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 세션값을 부여 
      if(userID == null){ 
     	 PrintWriter script = response.getWriter();
     	 script.println("<script>");
     	 script.println("alert('로그인을 하세요')");
     	 script.println("location.href = 'login.jsp'");
     	 script.println("</script>");
-     }
+     } //로그인된 아이디가 아니면 로그인 페이지로 이동
      
      int bbsID = 0; // 현재 글이 유효한 글인지 확인
      if (request.getParameter("bbsID") != null) {

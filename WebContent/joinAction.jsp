@@ -19,14 +19,14 @@
    <% 
      if (user.getUserID() == null || user.getUserPassword() == null || user.getUserName() == null 
      || user.getUserGender() == null || user.getUserEmail() == null){
-    	 PrintWriter script = response.getWriter();
+    	 PrintWriter script = response.getWriter(); //공백이 있는지 확인
     	 script.println("<script>");
     	 script.println("alert('입력이 안 된 사항이 있습니다. 다시 입력하여 주십시오')");
     	 script.println("history.back()");
     	 script.println("</script>");
      } else {
          UserDAO userDAO = new UserDAO();
-         int result = userDAO.join(user);
+         int result = userDAO.join(user); //아이디 중복 여부 확인
          if (result == -1) {
         	 PrintWriter script = response.getWriter();
         	 script.println("<script>");

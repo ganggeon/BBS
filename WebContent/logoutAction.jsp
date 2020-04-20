@@ -10,7 +10,7 @@
 </head>
 <body>
    <% 
-      session.invalidate();
+      session.invalidate();//세션 삭제
    %>
    <script>
       location.href = 'main.jsp';

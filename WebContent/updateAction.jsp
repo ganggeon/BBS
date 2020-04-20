@@ -15,7 +15,7 @@
      String userID = null;
      if(session.getAttribute("userID") != null){
     	 userID = (String) session.getAttribute("userID");
-     } // 섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 섹션값을 부여 
+     } // 섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 세션값을 부여 
      if(userID == null){ 
     	 PrintWriter script = response.getWriter();
     	 script.println("<script>");
@@ -45,7 +45,7 @@
      } else { 
      if (request.getParameter("bbsTitle") == null || request.getParameter("bbsContent") == null 
          || request.getParameter("bbsTitle").equals(" ") || request.getParameter("bbsContent").equals(" ")){
-    	PrintWriter script = response.getWriter();
+    	PrintWriter script = response.getWriter(); //공백이 있는지 확인
     	script.println("<script>");
     	script.println("alert('입력이 안 된 사항이 있습니다. 다시 입력하여 주십시오')");
     	script.println("history.back()");
