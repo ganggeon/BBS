@@ -23,7 +23,7 @@ public class BbsDAO {
 		}
 	}
     
-	public String getDate() {
+	public String getDate() { //현재의 시간을 입력해준다
 		String SQL = "SELECT NOW()";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
@@ -37,13 +37,13 @@ public class BbsDAO {
 		return ""; // 데이터베이스 오류
 	}
 	
-	public int getNext() { 
+	public int getNext() { //게시물 번호(bbs ID)를 가져온다
 		String SQL = "SELECT bbsID FROM BBS ORDER BY bbsID DESC";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
-				 return rs.getInt(1) + 1;
+				 return rs.getInt(1) + 1; //다음 게시물 번호를 부여
 			}
 			return 1; // 첫 번째 게시물인 경우
 		} catch (Exception e) {
