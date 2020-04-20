@@ -2,12 +2,12 @@ package bbs;
 
 public class Bbs {
 
-	private int bbsID;
-	private String bbsTitle;
-	private String userID;
-	private String bbsDate;
-	private String bbsContent;
-	private int bbsAvailable;
+	private int bbsID; //게시물 번호
+	private String bbsTitle; //게시물 제목
+	private String userID; //유저 아이디
+	private String bbsDate; //게시물 날짜
+	private String bbsContent; //게시물 내용
+	private int bbsAvailable; //삭제 여부 - 삭제시 bbsAvailable = 0으로 만듬.
 	
 	public int getBbsID() {
 		return bbsID;

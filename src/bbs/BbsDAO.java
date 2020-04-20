@@ -11,7 +11,7 @@ public class BbsDAO {
 	private Connection conn;
 	private ResultSet rs;
 	
-	public BbsDAO() { //mySQL에 접속 가능하게 해준다
+	public BbsDAO() { //DB에 접속 가능하게 해준다
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/gun5752?characterEncoding=UTF-8&serverTimezone=UTC"; 
 			String dbID = "gun5752";
@@ -37,7 +37,7 @@ public class BbsDAO {
 		return ""; // 데이터베이스 오류
 	}
 	
-	public int getNext() {
+	public int getNext() { 
 		String SQL = "SELECT bbsID FROM BBS ORDER BY bbsID DESC";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
