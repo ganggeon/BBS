@@ -1,12 +1,12 @@
 package user;
 
-public class User { //mysql에 저장되어있는 데이터를 가져온다
-
-	private String userID;
-	private String userPassword;
-	private String userName;
-	private String userGender;
-	private String userEmail;
+public class User { //DB에 저장되어있는 데이터를 가져온다
+	
+	private String userID; //유저 아이디
+	private String userPassword; //유저 비밀번호 
+	private String userName; //유저 이름
+	private String userGender; //유저 성별
+	private String userEmail; //유저 이메일
 	
 	public String getUserID() {
 		return userID;

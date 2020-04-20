@@ -1,4 +1,4 @@
-// 데이터베이스 접근 클래스 (데이터를 가져오거나 데이터를 삽입)
+// 데이터베이스 접근 클래스(데이터를 가져오거나 데이터를 삽입)
 package user;
 
 import java.sql.Connection;
@@ -49,7 +49,7 @@ public class UserDAO {
 	
 	public int join(User user) {
 		
-	 String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?)";
+	 String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?)"; //DB에 데이터 입력
 	try {
 		pstmt = conn.prepareStatement(SQL);
 		pstmt.setString(1, user.getUserID());
