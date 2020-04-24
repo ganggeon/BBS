@@ -53,13 +53,13 @@
     	} else {
     	BbsDAO bbsDAO = new BbsDAO();
     	int result = bbsDAO.update(bbsID, request.getParameter("bbsTitle"), request.getParameter("bbsContent"));
-    	if (result == -1) {
+    	if (result == -1) {  // 글수정에 실패했을 경우
     	PrintWriter script = response.getWriter();
     	script.println("<script>");
     	script.println("alert('글수정에 실패했습니다.')");
     	script.println("</script>");
     	}
-    	else{
+    	else{  // 글수정에 성공했을 경우
     	PrintWriter script = response.getWriter();
     	script.println("<script>");
     	script.println("location.href = 'bbs.jsp'");

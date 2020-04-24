@@ -19,7 +19,7 @@
    <% 
      if (user.getUserID() == null || user.getUserPassword() == null || user.getUserName() == null 
      || user.getUserGender() == null || user.getUserEmail() == null){
-    	 PrintWriter script = response.getWriter(); //공백이 있는지 확인
+    	 PrintWriter script = response.getWriter(); //하나의 스크립트 문장을 넣을 수 있도록한다
     	 script.println("<script>");
     	 script.println("alert('입력이 안 된 사항이 있습니다. 다시 입력하여 주십시오')");
     	 script.println("history.back()");

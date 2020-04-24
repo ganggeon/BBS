@@ -71,7 +71,7 @@
       </div>
     <div class="col-lg-4"></div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> <!-- 애니매이션 담당 JQUERY -->
+  <script src="js/bootstrap.js"></script> <!-- 부트스트랩 JS  -->
 </body>
 </html>

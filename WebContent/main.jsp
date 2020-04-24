@@ -6,13 +6,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/bootstrap.css"> 
+<link rel="stylesheet" href="css/custom.css"> <!-- 부트스트랩 선언 -->
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
   <%
-    String userID = null;
+    String userID = null; //로그인이 된 사람들은 로그인정보를 담는다
     if (session.getAttribute("userID") != null) {
     	userID = (String) session.getAttribute("userID");
     }
@@ -34,7 +34,7 @@
        <li><a href="bbs.jsp">게시판</a>
      </ul>
      <%
-        if(userID == null){
+        if(userID == null){  // 로그인이 되어있지 않은 경우에만 접속하기 버튼이 나온다
      %>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
@@ -48,7 +48,7 @@
         </li>
       </ul>
      <%
-        } else {
+        } else { // 로그인이 되어있는 사람만 볼수 있는 화면
      %>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">

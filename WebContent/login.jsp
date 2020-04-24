@@ -4,18 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- 반응형 웹 메타 태그 -->
 <link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/custom.css"> <!-- 부트스트랩 css 참조 -->
 <title>JSP 게시판 웹 사이트</title>
 </head>
 <body>
   <nav class="navbar navbar-default">
-    <div class="navbar-header">
+    <div class="navbar-header"> <!-- 홈페이지 로고 -->
       <button type="button" class="navbar-toggle collapsed"
         data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
         aria-expanded="false">
-         <span class="icon-bar"></span>
+         <span class="icon-bar"></span> <!-- 축소시 우상단 버튼 -->
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>				
       </button>   

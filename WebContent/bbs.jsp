@@ -25,9 +25,9 @@
     if (session.getAttribute("userID") != null) {
     	userID = (String) session.getAttribute("userID");
     } //섹션값이 null값이 아니면(이미 로그인된 아이디면) userID에 세션값을 부여 
-    int pageNumber = 1;
+    int pageNumber = 1; //기본페이지. 기본적으로 페이지 1부터 시작하므로 1로 초기화한다.
     if (request.getParameter("pageNumber") != null) {
-    	pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
+    	pageNumber = Integer.parseInt(request.getParameter("pageNumber")); //pageNumber 값이 있다면 그 값으로 지정
     }
   %>
   <nav class="navbar navbar-default">
@@ -47,7 +47,7 @@
        <li><a href="bbs.jsp">게시판</a>
      </ul>
      <%
-        if(userID == null){
+        if(userID == null){  // 접속하기는 로그인이 되어있지 않은 경우만 나오게한다
      %>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
@@ -61,7 +61,7 @@
         </li>
       </ul>
      <%
-        } else {
+        } else {  // 로그인이 되어있는 사람만 볼수 있는 화면
      %>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
